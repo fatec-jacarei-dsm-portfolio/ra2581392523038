@@ -1,0 +1,328 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --bg-color: #1E1E1E;
+    --caixa-azul: #1E2230;
+    --cor-txt: #E0E0E0;
+    --cor-txt-azul: #70C1FF;
+    --cor-btn: #111184;
+    --azul-hover: #72b5f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    font-family: "Inter", sans-serif !important;
+    color: white !important;
+}
+
+p {
+    font-size: x-large;
+}
+
+/* --- CABEÇALHO E MENU --- */
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-box {
+    display: flex;
+    width: 346px;
+    height: 48px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 20px;
+    background-color: var(--caixa-azul);
+    border-radius: 15px;
+}
+
+.menu-box a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-box svg {
+    fill: var(--cor-txt);
+    transition: all 0.3s ease;
+}
+
+/* Hover Menu */
+.menu-box a:hover {
+    transform: translateY(-5px);
+    background-color: rgba(114, 181, 242, 0.2);
+}
+
+.menu-box a:hover svg {
+    fill: var(--azul-hover);
+    filter: drop-shadow(0 0 8px rgba(114, 181, 242, 0.6));
+}
+
+/* --- BOTÕES --- */
+.btn-primary {
+    background-color: var(--azul-hover) !important;
+    border-color: var(--azul-hover) !important;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(114, 181, 242, 0.4);
+}
+
+.btn-primary a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --- SEÇÕES E TEXTOS --- */
+section {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30px);
+    transition: all 1s;
+}
+
+section.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.primeiro { margin-bottom: 200px; margin-top: 10px; }
+.segundo { margin-bottom: 200px; }
+
+.destaque, .titulo-sessao span {
+    color: var(--cor-txt-azul);
+}
+
+.texto-corpo {
+    font-size: x-large;
+    color: var(--cor-txt-azul);
+}
+
+.titulos-destaque {
+    color: var(--cor-txt-azul);
+    font-size: xx-large;
+}
+
+/* --- CAIXA DE PERFIL (STICKY) --- */
+.caixa-com-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--caixa-azul);
+    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.foto img {
+    display: block;
+    width: 200px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+#lnome {
+    color: var(--cor-txt-azul);
+    margin-top: 10px;
+}
+
+.botao { margin-top: 30px; }
+
+/* --- CARDS DE PROJETOS --- */
+/* Container do Card */
+.projeto-card-overlay {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 200px; /* Altura fixa menor para deixar horizontal */
+    transition: transform 0.3s ease;
+}
+
+/* Ajuste da Imagem para preencher o card menor */
+.projeto-card-overlay .caixa-imagem {
+    height: 100%;
+    width: 100%;
+}
+
+.projeto-card-overlay .caixa-imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Texto sobreposto (Overlay) */
+.caixa-texto-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9)); /* Degradê para ler o texto */
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.caixa-texto-overlay h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.caixa-texto-overlay p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+/* Hover interativo */
+.link-projeto:hover .projeto-card-overlay {
+    transform: scale(1.02);
+    border: 1px solid var(--cor-txt-azul);
+}
+
+/* --- SEÇÃO DE SKILLS --- */
+.caixa-skill {
+    background-color: #1e2029;
+    border-radius: 12px;
+    padding: 15px 20px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+
+.caixa-skill:hover { background-color: #252836; }
+
+.caixa-logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.caixa-logo img { width: 70%; height: auto; }
+.caixa-txt h3 { color: #ffffff; font-size: 1.1rem; font-weight: 600; margin: 0; }
+.caixa-txt p { color: #a0a0a0; font-size: 0.85rem; margin: 0; }
+
+/* --- TIMELINE --- */
+.timeline { list-style: none; padding-left: 0; position: relative; }
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px; top: 5px; bottom: 0;
+    width: 2px;
+    background-color: #333842;
+}
+
+.timeline li { position: relative; margin-bottom: 40px; padding-left: 35px; }
+
+.timeline-ponto {
+    position: absolute;
+    left: 0; top: 6px;
+    width: 14px; height: 14px;
+    background-color: var(--azul-hover);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(114, 181, 242, 0.5);
+}
+
+.timeline-conteudo strong { font-size: 1.2rem; color: #ffffff; display: block; }
+.timeline-conteudo span { font-size: 1rem; margin-top: 5px; }
+.timeline li:last-child { margin-bottom: 0; }
+
+/* --- CONTATO --- */
+.titulo-contato { font-size: 2.5rem; font-weight: 700; color: white; }
+.titulo-contato span { color: var(--azul-hover); }
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px; height: 65px;
+    background-color: #1e2029;
+    color: #dce1f2;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.btn-contato:hover {
+    color: #ffffff;
+    background-color: var(--azul-hover);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(114, 181, 242, 0.3);
+}
+
+.icones-redes svg { transition: transform 0.3s ease; }
+.btn-contato:hover svg { transform: scale(1.1); }
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 991.98px) {
+    .col-3, .col-9, .col-10, .col-2 { width: 100% !important; flex: 0 0 100% !important; max-width: 100% !important; }
+    .caixa-com-foto { position: relative !important; top: 0 !important; margin-bottom: 50px; }
+    header .col-2 { display: none; }
+    .menu-box { width: 100%; margin: 10px 0; }
+    .primeiro, .segundo { margin-bottom: 80px; }
+    h1 { font-size: 2rem !important; }
+    .titulo-contato { font-size: 1.8rem; }
+}
+
+@media (max-width: 575.98px) {
+    p, .texto-corpo { font-size: 1.1rem !important; }
+    .caixa-skill { height: auto; flex-direction: column; text-align: center; padding: 20px; }
+    .caixa-logo { margin-right: 0; margin-bottom: 10px; }
+    .btn-contato { width: 50px; height: 50px; }
+    .caixa-imagem { height: 120px; }
+    .caixa-texto h3 { font-size: 0.9rem; margin-bottom: 0; }
+}
+
+
+
+/* --- MODAL --- */
+
+.modal-content {
+    background-color: #1e2029 !important; /* Mesma cor dos seus cards */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header, .modal-footer {
+    border-color: rgba(114, 181, 242, 0.2) !important;
+}
+
+.modal-body p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Badge estilizado */
+.badge {
+    padding: 8px 15px;
+    font-weight: 500;
+}
