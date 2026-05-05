@@ -1,415 +1,1184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Fernando Cobra</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header class="container">
-        <div class="row align-items-center"> <nav class="col-10 justify-content-center">
-                <div class="menu-box">
-                    <a href="#home" title="home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house" viewBox="0 0 16 16">
-                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-                    </svg></a>
-                    <a href="#sobre" title="sobre"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                </svg></a>
-                    <a href="#projetos" title="projetos"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-folder-fill" viewBox="0 0 16 16">
-                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"/>
-                    </svg></a>
-                    <a href="#skills" title="habilidades"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-file-earmark-bar-graph-fill" viewBox="0 0 16 16">
-                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m.5 10v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/>
-                </svg></a>
-                    <a href="#experiencia" title="experiencia"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
-                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
-                </svg></a>
-                    <a href="#contato" title="contato"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                </svg></a>
-                </div>
-            </nav>
-            <div class="col-2 p-3 align-self-center">
-                <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download>
-                    <button class="btn btn-primary">Download CV</button>
-                </a>
-            </div>
+      <div class="row align-items-center">
+        <nav class="col-10 justify-content-center">
+          <div class="menu-box">
+            <a href="#home" title="home"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-house"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                /></svg
+            ></a>
+            <a href="#sobre" title="sobre"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                /></svg
+            ></a>
+            <a href="#projetos" title="projetos"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-folder-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"
+                /></svg
+            ></a>
+            <a href="#skills" title="habilidades"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-file-earmark-bar-graph-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m.5 10v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5.5m-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"
+                /></svg
+            ></a>
+            <a href="#experiencia" title="experiencia"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-mortarboard-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"
+                /></svg
+            ></a>
+            <a href="#contato" title="contato"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                /></svg
+            ></a>
+          </div>
+        </nav>
+        <div class="col-2 p-3 align-self-center">
+          <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download
+            ><button class="btn btn-primary">Download CV</button></a
+          >
         </div>
+      </div>
     </header>
 
     <main class="container mt-5">
-        <div class="row">
-            <aside class="col-md-3">
-                <div class="caixa-com-foto">
-                    <div class="foto">
-                        <img src="./src/images/eu.png" alt="fotolucas">
-                    </div>
-                    <h5 id="lnome">Lucas Fernando Cobra</h5>
-                    <div class="botao">
-                        <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download>
-                            <button class="btn btn-primary">Download CV</button>
-                        </a>
-                    </div>
+      <div class="row">
+        <aside class="col-md-3">
+          <div class="caixa-com-foto">
+            <div class="foto">
+              <img src="./src/images/eu.png" alt="fotolucas" />
+            </div>
+            <h5 id="lnome">Lucas Fernando Cobra</h5>
+            <div class="botao">
+              <a href="./src/curriculo-Lucas-Fernando-Cobra.pdf" download
+                ><button class="btn btn-primary">Download CV</button></a
+              >
+            </div>
+          </div>
+        </aside>
+
+        <section class="col-md-9">
+          <section id="home" class="primeiro mb-5">
+            <h1>
+              <strong><span class="destaque">Lucas</span> Cobra</strong>
+            </h1>
+            <h1>
+              Desenvolvedor & <span class="destaque" id="typing-text"></span>
+            </h1>
+            <p class="texto-corpo">
+              Transformando 14 anos de experiência técnica em soluções digitais
+              intuitivas e de alto impacto.
+            </p>
+            <div class="text-end">
+              <a href="#projetos" class="btn btn-primary">Projetos</a>
+            </div>
+          </section>
+
+          <section id="sobre" class="segundo mb-5">
+            <h2 class="titulos-destaque">Persistente, Curioso e Organizado</h2>
+            <p>
+              Com um pé na infraestrutura de TI e outro no design, sou movido
+              pela resolução de problemas...
+            </p>
+          </section>
+
+          <section id="projetos" class="py-5">
+            <h1 class="titulo-sessao mb-5">
+              Projetos <br /><span>Selecionados</span>
+            </h1>
+            
+
+            <div class="row g-4 justify-content-start">
+
+               <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalFatecBot"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img
+                      src="./src/images/fatecbot.JPG"
+                      alt="FatecBot"
+                    />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>FatecBot</h3>
+                    <p>Clique para ver detalhes...</p>
+                  </div>
                 </div>
-            </aside>
-
-            <div class="col-md-9">
-                <section id="home" class="primeiro mb-5">
-                    <h1><strong><span class="destaque">Lucas</span> Cobra</strong></h1>
-                    <h1> Desenvolvedor & <span class="destaque" id="typing-text"></span></h1>
-                    <p class="texto-corpo">Transformando 14 anos de experiência técnica em soluções digitais intuitivas e de alto impacto.</p>
-                    <div class="text-end">
-                        <a href="#projetos" class="btn btn-primary">Projetos</a>
-                    </div>
-                </section>
-
-                <section id="sobre" class="segundo mb-5">
-                    <h2 class="titulos-destaque">Persistente, Curioso e Organizado</h2>
-                    <p>Com um pé na infraestrutura de TI e outro no design, sou movido pela resolução de problemas...</p>
-                </section>
-
-                                    <section id="projetos" class="container py-5">
-                            <h1 class="titulo-sessao mb-5">Projetos <br><span>Selecionados</span></h1>
-
-                            <div class="row g-4 justify-content-start">
-                                <div class="col-10 col-md-4">
-                                    <div class="caixa-projeto projeto-card-overlay" 
-                                        data-bs-toggle="modal" 
-                                        data-bs-target="#modalAgriRSLab" 
-                                        style="cursor: pointer;">
-                                        
-                                        <div class="caixa-imagem">
-                                            <img src="./src/images/projetoagrslab.JPG" alt="Portal AgriRSLab">
-                                        </div>
-                                        <div class="caixa-texto-overlay">
-                                            <h3>Portal AgriRSLab</h3>
-                                            <p>Clique para ver detalhes...</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-10 col-md-4">
-                                    <div class="caixa-projeto projeto-card-overlay" 
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalTaskPro"
-                                        style="cursor: pointer;">
-                                        <div class="caixa-imagem">
-                                            <img src="./src/images/tskpro.JPG" alt="TaskMaster Pro">
-                                        </div>
-                                        <div class="caixa-texto-overlay">
-                                            <h3>TaskMaster Pro</h3>
-                                            <p>Clique para ver detalhes...</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                 <div class="col-10 col-md-4">
-                                    <div class="caixa-projeto projeto-card-overlay" 
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalEmBreve"
-                                        style="cursor: pointer;">
-                                        <div class="caixa-imagem">
-                                            <img src="./src/images/nxpj.JPG" alt="Em breve">
-                                        </div>
-                                        <div class="caixa-texto-overlay">
-                                            <h3>Em breve</h3>
-                                            <p>Novos projetos em breve...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-</section>
-
-              <section id="skills" class="py-5">
-    <h1 class="titulo-sessao mb-5">Habilidades em <br><span>Destaque</span></h1>
-
-    <div class="row g-3">
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Criação de protótipos interativos e Design Systems modernos.">
-                <div class="caixa-logo"><img src="./src/images/figma.png" alt="Figma"></div>
-                <div class="caixa-txt"><h3>Figma</h3><p>Protótipo</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Estruturação semântica e acessível para web moderna.">
-                <div class="caixa-logo"><img src="./src/images/html-5.png" alt="HTML5"></div>
-                <div class="caixa-txt"><h3>HTML5</h3><p>Web Designer</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Entrevistas com usuários, testes de usabilidade e análise de personas.">
-                <div class="caixa-logo"><img src="./src/images/ux.png" alt="UX"></div>
-                <div class="caixa-txt"><h3>UX Research</h3><p>Experiência do Usuário</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Edição avançada de imagens e criação de peças publicitárias.">
-                <div class="caixa-logo"><img src="./src/images/Photoshop.png" alt="Adobe PS"></div>
-                <div class="caixa-txt"><h3>Adobe Creative Suite</h3><p>Designer Gráfico</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Estilização avançada, animações, Flexbox e Grid Layout.">
-                <div class="caixa-logo"><img src="./src/images/css3.png" alt="CSS3"></div>
-                <div class="caixa-txt"><h3>CSS3</h3><p>Web Designer</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Manipulação do DOM, consumo de APIs e lógica de programação.">
-                <div class="caixa-logo"><img src="./src/images/js.png" alt="JavaScript"></div>
-                <div class="caixa-txt"><h3>JavaScript</h3><p>Linguagem de Programação</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Criação de queries, modelagem de dados e bancos relacionais.">
-                <div class="caixa-logo"><img src="./src/images/sql.png" alt="SQL"></div>
-                <div class="caixa-txt"><h3>SQL</h3><p>Banco de Dados</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Administração de sistemas, terminal Bash e permissões.">
-                <div class="caixa-logo"><img src="./src/images/linux.png" alt="Linux"></div>
-                <div class="caixa-txt"><h3>Linux</h3><p>Servidores</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Configuração de AD, DNS, DHCP e políticas de grupo.">
-                <div class="caixa-logo"><img src="./src/images/windows.png" alt="Windows"></div>
-                <div class="caixa-txt"><h3>Windows Server</h3><p>Servidores</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Diagramas de classe, caso de uso e sequência para projetos.">
-                <div class="caixa-logo"><img src="./src/images/uml.png" alt="UML"></div>
-                <div class="caixa-txt"><h3>UML</h3><p>Diagramação Estrutural</p></div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6">
-            <div class="caixa-skill d-flex align-items-center" data-info="Gestão ágil de projetos, Sprints e cerimônias de time.">
-                <div class="caixa-logo"><img src="./src/images/scrum.png" alt="Scrum"></div>
-                <div class="caixa-txt"><h3>Scrum</h3><p>Metodologia Ágil</p></div>
-            </div>
-        </div>
-    </div>
-</section>
+              </div>  
 
 
 
-                    </section>
-
-                <section id="experiencia" class="py-5">
-                                                <h1 class="titulo-sessao mb-5"><span>Experiência</span></h1>
-
-                            <ul class="timeline">
-                                <li>
-                                    <div class="timeline-ponto"></div>
-                                    <div class="timeline-conteudo">
-                                        <strong>Tecnólogo em Desenvolvimento de Sistemas Multiplataforma</strong> 
-                                        <span class="d-block text-secondary">FATEC (2025 – Atual)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-ponto"></div>
-                                    <div class="timeline-conteudo">
-                                        <strong>Analista de Suporte Nível 3</strong> 
-                                        <span class="d-block text-secondary">Sonda (2019 – Atual)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-ponto"></div>
-                                    <div class="timeline-conteudo">
-                                        <strong>Tecnólogo em Designer Gráfico</strong> 
-                                        <span class="d-block text-secondary">Unip (2014)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-ponto"></div>
-                                    <div class="timeline-conteudo">
-                                        <strong>Help Desk Nível 2</strong> 
-                                        <span class="d-block text-secondary">Tivit (2010 – 2018)</span>
-                                    </div>
-                                </li>
-                            </ul>
-                    </section>
-
-                <section id="contato" class="py-5 text-center">
-                    <h2 class="titulo-contato mb-4">Vamos construir <span>algo juntos?</span></h2>
-                    <div class="d-flex justify-content-center gap-4 icones-redes">
-                        <a href="https://wa.me/5512981293001" target="_blank" class="btn-contato" aria-label="Whatsapp">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/lucascobra" target="_blank" class="btn-contato"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                            </svg></a>
-
-                            <a href="https://github.com/LucasCobraFatec"  target="_blank" class="btn-contato" aria-label="Github">
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                </svg>
-                        </a>
-
-                                 <a href="mailto:lucascobradesigner@gmail.com" target="_blank" class="btn-contato" aria-label="Email">
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
-                                </svg>
-                        </a>  
-
-
-
-                        </div>
-                </section>
-            </div> </div> 
-        
-        
-        
-        
-        
-        
-
-    </div>
-  </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </main>
- 
-
-
-
-
-            <!--   Modals -->
-
-    <script src="./src/script/main.js"></script>
-
-            <div class="modal fade" id="modalAgriRSLab" tabindex="-1" aria-labelledby="modalAgriRSLabLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content bg-dark text-white border-secondary">
-                    <div class="modal-header border-secondary">
-                        <h5 class="modal-title destaque" id="modalAgriRSLabLabel">Portal AgriRSLab</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="./src/images/projetoagrslab.JPG" class="img-fluid rounded mb-3" alt="Capa do Projeto">
-                        <h4 class="mt-3">Sobre o Projeto</h4>
-                        <p>Prototipagem completa e desenvolvimento de um portal focado no setor de agronegócio. Este projeto envolveu pesquisa de UX e implementação de tecnologias front-end modernas.</p>
-                        <h4 class="mt-3">Tecnologias</h4>
-                        <div class="d-flex gap-2 flex-wrap">
-                            <span class="badge bg-primary">HTML5</span>
-                            <span class="badge bg-primary">CSS3</span>
-                            <span class="badge bg-primary">JavaScript</span>
-                            <span class="badge bg-info text-dark">Figma</span>
-                        </div>
-                    </div>
-                    <div class="modal-footer border-secondary">
-                        <a href="https://github.com/NightHawksDevelopers/ABP-1.git" target="_blank" class="btn btn-outline-light">Repositório GitHub</a>
-                        <button type="button" class="btn btn-primary">Acessar Site</button>
-                    </div>
+              <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAgriRSLab"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img
+                      src="./src/images/projetoagrslab.JPG"
+                      alt="Portal AgriRSLab"
+                    />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>Portal AgriRSLab</h3>
+                    <p>Clique para ver detalhes...</p>
+                  </div>
                 </div>
-            </div>
-        </div>
+              </div>
+              <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTaskPro"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img src="./src/images/tskpro.JPG" alt="TaskMaster Pro" />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>TaskMaster Pro</h3>
+                    <p>Clique para ver detalhes...</p>
+                  </div>
+                </div>
+              </div>
 
-<div class="modal fade" id="modalTaskPro" tabindex="-1" aria-labelledby="modalTaskProLabel" aria-hidden="true">
+              <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMegaSena"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img src="./src/images/megasena.JPG" alt="MegaSena" />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>MegaSena</h3>
+                    <p>Clique para ver detalhes...</p>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalBiblioteca"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img src="./src/images/biblioteca.JPG" alt="Biblioteca" />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>Biblioteca</h3>
+                    <p>Clique para ver detalhes...</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-10 col-md-4">
+                <div
+                  class="caixa-projeto projeto-card-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEmBreve"
+                  style="cursor: pointer"
+                >
+                  <div class="caixa-imagem">
+                    <img src="./src/images/nxpj.JPG" alt="Em breve" />
+                  </div>
+                  <div class="caixa-texto-overlay">
+                    <h3>Em breve</h3>
+                    <p>Novos projetos em breve...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills" class="py-5">
+            <h1 class="titulo-sessao mb-5">
+              Habilidades em <br /><span>Destaque</span>
+            </h1>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Criação de protótipos interativos e Design Systems modernos."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/figma.png" alt="Figma" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>Figma</h3>
+                    <p>Protótipo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Estruturação semântica e acessível para web moderna."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/html-5.png" alt="HTML5" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>HTML5</h3>
+                    <p>Web Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Entrevistas com usuários, testes de usabilidade e análise de personas."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/ux.png" alt="UX" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>UX Research</h3>
+                    <p>Experiência do Usuário</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Edição avançada de imagens e criação de peças publicitárias."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/Photoshop.png" alt="Adobe PS" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>Adobe Creative Suite</h3>
+                    <p>Designer Gráfico</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Estilização avançada, animações, Flexbox e Grid Layout."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/css3.png" alt="CSS3" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>CSS3</h3>
+                    <p>Web Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Manipulação do DOM, consumo de APIs e lógica de programação."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/js.png" alt="JavaScript" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>JavaScript</h3>
+                    <p>Linguagem de Programação</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Criação de queries, modelagem de dados e bancos relacionais."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/sql.png" alt="SQL" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>SQL</h3>
+                    <p>Banco de Dados</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Administração de sistemas, terminal Bash e permissões."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/linux.png" alt="Linux" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>Linux</h3>
+                    <p>Servidores</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Configuração de AD, DNS, DHCP e políticas de grupo."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/windows.png" alt="Windows" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>Windows Server</h3>
+                    <p>Servidores</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Diagramas de classe, caso de uso e sequência para projetos."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/uml.png" alt="UML" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>UML</h3>
+                    <p>Diagramação Estrutural</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="caixa-skill d-flex align-items-center"
+                  data-info="Gestão ágil de projetos, Sprints e cerimônias de time."
+                >
+                  <div class="caixa-logo">
+                    <img src="./src/images/scrum.png" alt="Scrum" />
+                  </div>
+                  <div class="caixa-txt">
+                    <h3>Scrum</h3>
+                    <p>Metodologia Ágil</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="experiencia" class="py-5">
+            <h1 class="titulo-sessao mb-5"><span>Experiência</span></h1>
+            <ul class="timeline">
+              <li>
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                  <strong
+                    >Tecnólogo em Desenvolvimento de Sistemas
+                    Multiplataforma</strong
+                  ><span class="d-block text-secondary"
+                    >FATEC (2025 – Atual)</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                  <strong>Analista de Suporte Nível 3</strong
+                  ><span class="d-block text-secondary"
+                    >Sonda (2019 – Atual)</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                  <strong>Tecnólogo em Designer Gráfico</strong
+                  ><span class="d-block text-secondary">Unip (2014)</span>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-ponto"></div>
+                <div class="timeline-conteudo">
+                  <strong>Help Desk Nível 2</strong
+                  ><span class="d-block text-secondary"
+                    >Tivit (2010 – 2018)</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="contato" class="py-5 text-center">
+            <h2 class="titulo-contato mb-4">
+              Vamos construir <span>algo juntos?</span>
+            </h2>
+            <div class="d-flex justify-content-center gap-4 icones-redes">
+              <a
+                href="https://wa.me/5512981293001"
+                target="_blank"
+                class="btn-contato"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/lucascobra"
+                target="_blank"
+                class="btn-contato"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  /></svg
+              ></a>
+              <a
+                href="https://github.com/LucasCobraFatec"
+                target="_blank"
+                class="btn-contato"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+              <a
+                href="mailto:lucascobradesigner@gmail.com"
+                target="_blank"
+                class="btn-contato"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-envelope-at-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                  /></svg
+              ></a>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div
+      class="modal fade"
+      id="modalAgriRSLab"
+      tabindex="-1"
+      aria-labelledby="modalAgriRSLabLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title destaque" id="modalAgriRSLabLabel">
+              Portal AgriRSLab
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div
+              id="carouselAgriRS"
+              class="carousel slide mb-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./src/images/projetoagrslab.JPG"
+                    class="d-block w-100 rounded"
+                    alt="Interface Principal"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/agrirslab1.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Site 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/agrirslab2.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Site 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/agrirslab3.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Site 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselAgriRS"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselAgriRS"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Portal Institucional e Laboratório de Pesquisa desenvolvido para
+              centralizar dados e pesquisas do setor de agronegócio.
+            </p>
+
+            <h4 class="mt-4">O que foi desenvolvido:</h4>
+            <ul class="text-start">
+              <li>
+                <strong>Design & UX:</strong> Estruturação da arquitetura de
+                informação e criação de protótipos de alta fidelidade
+                (Mobile-First) no Figma.
+              </li>
+              <li>
+                <strong>Front-end:</strong> Desenvolvimento de interface
+                responsiva cross-device, focada em fluidez e alta performance.
+              </li>
+              <li>
+                <strong>Engenharia de Software:</strong> Modelagem de dados e
+                documentação técnica com diagramas UML (Caso de Uso, Sequência e
+                Classes).
+              </li>
+              <li>
+                <strong>Gestão (Scrum):</strong> Atuação como facilitador do
+                ciclo Scrum, gestão de entregas e edição de material audiovisual
+                técnico para sprints.
+              </li>
+            </ul>
+
+            <h4 class="mt-4">Stack Tecnológica</h4>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-primary">HTML5</span>
+              <span class="badge bg-primary">CSS3</span>
+              <span class="badge bg-primary">JavaScript</span>
+              <span class="badge bg-info text-dark">Figma</span>
+              <span class="badge bg-secondary">UML</span>
+              <span class="badge bg-secondary">Scrum</span>
+            </div>
+          </div>
+
+          <div class="modal-footer border-secondary">
+            <a
+              href="https://github.com/NightHawksDevelopers/ABP-1.git"
+              target="_blank"
+              class="btn btn-outline-light"
+              >Repositório GitHub</a
+            >
+            <button type="button" class="btn btn-primary">Acessar Site</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalTaskPro"
+      tabindex="-1"
+      aria-labelledby="modalTaskMasterProLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title destaque" id="modalTaskMasterProLabel">
+              TaskMaster Pro
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div
+              id="carouselTaskMaster"
+              class="carousel slide mb-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./src/images/taksMasterPro1.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Interface TaskMaster"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/taksMasterPro2.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Detalhes TaskMaster"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/taksMasterPro3.PNG"
+                    class="d-block w-100 rounded"
+                    alt="Detalhes TaskMaster"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselTaskMaster"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselTaskMaster"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Gerenciador de tarefas avançado com UI declarativa, focado em
+              performance e tipagem rigorosa.
+            </p>
+
+            <h4 class="mt-4">O que foi desenvolvido:</h4>
+            <ul class="text-start">
+              <li>
+                <strong>Migração & Estabilidade:</strong> Refatoração de
+                componentes legados para Chakra UI v3, resolvendo erros críticos
+                de renderização.
+              </li>
+              <li>
+                <strong>TypeScript:</strong> Implementação de tipagem rigorosa
+                (Interfaces/Enums) eliminando erros em tempo de execução.
+              </li>
+              <li>
+                <strong>Performance:</strong> Lógica otimizada de estado
+                (useState) e filtros para operações CRUD com feedback visual
+                imediato.
+              </li>
+              <li>
+                <strong>Acessibilidade:</strong> Modernização da UI utilizando
+                componentes declarativos, superando as expectativas do escopo
+                original.
+              </li>
+            </ul>
+
+            <h4 class="mt-4">Stack Tecnológica</h4>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-primary">React 18</span>
+              <span class="badge bg-primary">TypeScript</span>
+              <span class="badge bg-info text-dark">Chakra UI v3</span>
+              <span class="badge bg-secondary">CRUD</span>
+            </div>
+          </div>
+
+          <div class="modal-footer border-secondary">
+            <a
+              href="https://github.com/LucasCobraFatec/taskmaster-pro.git"
+              target="_blank"
+              class="btn btn-outline-light"
+              >Repositório GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modalBiblioteca" tabindex="-1" aria-labelledby="modalBibliotecaLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-dark text-white border-secondary">
-            
             <div class="modal-header border-secondary">
-                <h5 class="modal-title destaque" id="modalTaskProLabel">TaskMaster Pro</h5>
+                <h5 class="modal-title destaque" id="modalBibliotecaLabel">Biblioteca Pessoal Digital</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
-                <img src="./src/images/tskpro.JPG" class="img-fluid rounded mb-3 w-100" alt="TaksMaster Pro">
+                <div id="carouselBiblioteca" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./src/images/biblioteca.jpg" class="d-block w-100 rounded" alt="Interface Biblioteca">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="./src/images/biblioteca2.jpg" class="d-block w-100 rounded" alt="Interface Biblioteca">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="./src/images/biblioteca3.jpg" class="d-block w-100 rounded" alt="Interface Biblioteca">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBiblioteca" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <h4>Sobre o Projeto</h4>
+                <p>Sistema de gestão de acervo com arquitetura distribuída, utilizando tecnologias modernas de banco de dados e nuvem.</p>
                 
-                <h4 class="mt-3">Sobre TaskMaster Pro</h4>
-                <p> TaskMaster Pro não é apenas um "to-do list". É uma aplicação onde apliquei conceitos reais de engenharia de software para garantir uma experiência fluida e persistente..</p>
-                
-                <h4 class="mt-3">Tecnologias em Estudo</h4>
+                <h4 class="mt-4">O que foi desenvolvido:</h4>
+                <ul class="text-start">
+                    <li><strong>Infraestrutura Cloud:</strong> Domínio de ambientes de produção com Neon (PostgreSQL serverless) e Render (Backend), permitindo alta disponibilidade.</li>
+                    <li><strong>Integração Assíncrona:</strong> Consumo de API RESTful com async/await, garantindo navegação fluida sem bloqueios de interface.</li>
+                    <li><strong>Validações Inteligentes:</strong> Regras de negócio rigorosas (bloqueio de datas futuras) e proteção de ambiente (CORS/Dotenv).</li>
+                    <li><strong>Performance:</strong> Implementação de filtragem em tempo real no sistema de busca, priorizando a usabilidade do usuário.</li>
+                </ul>
+
+                <h4 class="mt-4">Stack Tecnológica</h4>
                 <div class="d-flex gap-2 flex-wrap">
-                    <span class="badge bg-secondary">UX/UI Moderno</span>
-                    <span class="badge bg-secondary">React</span>
-                    <span class="badge bg-secondary">Node.js</span>
-                    <span class="badge bg-secondary">TypeScript</span>
+                    <span class="badge bg-primary">React</span>
+                    <span class="badge bg-success">Node.js</span>
+                    <span class="badge bg-success">Express</span>
+                    <span class="badge bg-info text-dark">Neon (PostgreSQL)</span>
+                    <span class="badge bg-secondary">Render</span>
+                    <span class="badge bg-secondary">GitHub Pages</span>
                 </div>
             </div>
 
             <div class="modal-footer border-secondary">
-                <a href="https://github.com/LucasCobraFatec/taskmaster-pro" target="_blank" class="btn btn-outline-light">Repositório GitHub</a>
-                <button type="button" class="btn btn-primary"><a href="https://taskmaster-pro-ochre.vercel.app" target="_blank">Acessar Site</a></button>
-
-                
+                <a href="https://github.com/LucasCobraFatec/BibliotecaPessoal" target="_blank" class="btn btn-outline-light">Repositório GitHub</a>
             </div>
-
         </div>
     </div>
 </div>
 
 
 
-
-
-
-<div class="modal fade" id="modalEmBreve" tabindex="-1" aria-labelledby="modalEmBreveLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div
+      class="modal fade"
+      id="modalFatecBot"
+      tabindex="-1"
+      aria-labelledby="modalFatecBotLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-dark text-white border-secondary">
-            
-            <div class="modal-header border-secondary">
-                <h5 class="modal-title destaque" id="modalEmBreveLabel">Aguardem Próximos Projetos</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title destaque" id="modalFatecBotLabel">
+              FatecBot - Sistema de Atendimento
+              <span
+                class="badge bg-warning text-dark ms-2"
+                style="font-size: 0.7rem"
+                >EM DESENVOLVIMENTO</span
+              >
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-            <div class="modal-body">
-                <img src="./src/images/nxpj.JPG" class="img-fluid rounded mb-3 w-100" alt="Próximos Projetos">
-                
-                <h4 class="mt-3">O que vem por aí?</h4>
-                <p>Atualmente estou desenvolvendo novas soluções focadas em automação e dashboards interativos. O objetivo é aplicar conceitos avançados de UI/UX e integração com APIs.</p>
-                
-                <h4 class="mt-3">Tecnologias em Estudo</h4>
-                <div class="d-flex gap-2 flex-wrap">
-                    <span class="badge bg-secondary">Python</span>
-                    <span class="badge bg-secondary">React</span>
-                    <span class="badge bg-secondary">Node.js</span>
-                    <span class="badge bg-secondary">TypeScript</span>
+          <div class="modal-body">
+            <div
+              id="carouselFatecBot"
+              class="carousel slide mb-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./src/images/FatecBot.JPG"
+                    class="d-block w-100 rounded"
+                    alt="Chat UI"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/FatecBot2.JPG"
+                    class="d-block w-100 rounded"
+                    alt="Chat UI tela 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/FatecBot3.JPG"
+                    class="d-block w-100 rounded"
+                    alt="Chat UI tela 3"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselFatecBot"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselFatecBot"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
             </div>
 
-            <div class="modal-footer border-secondary">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-                <a href="https://github.com/LucasCobraFatec" target="_blank" class="btn btn-primary">Ver Perfil no GitHub</a>
-            </div>
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Sistema Full Stack de atendimento inteligente, focado em segurança
+              de dados e alta performance.
+            </p>
 
+            <h4 class="mt-4">O que foi desenvolvido:</h4>
+            <ul class="text-start">
+              <li>
+                <strong>Arquitetura Full Stack:</strong> Aplicação robusta com
+                React 18/TypeScript e API REST (Node.js/Express) com type-safety
+                end-to-end.
+              </li>
+              <li>
+                <strong>Segurança:</strong> Autenticação JWT com hashing
+                Argon2id para proteção avançada contra ataques de força bruta.
+              </li>
+              <li>
+                <strong>Persistência:</strong> Modelagem de dados relacional
+                complexa utilizando PostgreSQL e Prisma ORM.
+              </li>
+              <li>
+                <strong>Infraestrutura:</strong> Containerização completa com
+                Docker/Docker Compose e testes automatizados (Vitest).
+              </li>
+              <li>
+                <strong>UI/UX:</strong> Interface moderna, acessível e
+                responsiva utilizando Tailwind CSS e shadcn/ui.
+              </li>
+            </ul>
+
+            <h4 class="mt-4">Stack Tecnológica</h4>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-primary">React 18</span>
+              <span class="badge bg-primary">TypeScript</span>
+              <span class="badge bg-success">Node.js</span>
+              <span class="badge bg-info text-dark">PostgreSQL</span>
+              <span class="badge bg-secondary">Prisma</span>
+              <span class="badge bg-secondary">Docker</span>
+            </div>
+          </div>
+
+          <div class="modal-footer border-secondary">
+            <a
+              href="https://github.com/seliganessesdevs/ABP---2DSM-2026"
+              target="_blank"
+              class="btn btn-outline-light"
+              >Repositório GitHub</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <div
+      class="modal fade"
+      id="modalMegaSena"
+      tabindex="-1"
+      aria-labelledby="modalMegaSenaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title destaque" id="modalMegaSenaLabel">
+              Mega-Sena - Sistema de Análise
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
+          <div class="modal-body">
+            <div
+              id="carouselMegaSena"
+              class="carousel slide mb-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./src/images/megasena.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Dashboard Mega-Sena"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/megasena2.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Listagem de Resultados"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./src/images/megasena3.jpg"
+                    class="d-block w-100 rounded"
+                    alt="Listagem de Resultados"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselMegaSena"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselMegaSena"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
 
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Aplicação Full Stack focada em processamento de grandes volumes de
+              dados históricos e análise estatística.
+            </p>
 
+            <h4 class="mt-4">Principais entregas:</h4>
+            <ul class="text-start">
+              <li>
+                <strong>Arquitetura:</strong> Sistema Full Stack com
+                microsserviços via Docker, garantindo isolamento e
+                escalabilidade.
+              </li>
+              <li>
+                <strong>Pipelines de Dados:</strong> Automação no processamento
+                de CSVs para PostgreSQL com schema otimizado.
+              </li>
+              <li>
+                <strong>Performance:</strong> Implementação de paginação
+                *on-demand* (limit/offset) para otimizar o consumo de recursos.
+              </li>
+              <li>
+                <strong>React Avançado:</strong> Gestão de estado complexa com
+                Hooks (useCallback, useEffect) para busca e filtros em tempo
+                real.
+              </li>
+              <li>
+                <strong>Resiliência:</strong> Tratamento de erros robusto e
+                indicadores de estado para melhor feedback ao usuário.
+              </li>
+            </ul>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            <h4 class="mt-4">Stack Tecnológica</h4>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-primary">React</span>
+              <span class="badge bg-primary">TypeScript</span>
+              <span class="badge bg-success">Node.js</span>
+              <span class="badge bg-info text-dark">PostgreSQL</span>
+              <span class="badge bg-secondary">Docker</span>
+              <span class="badge bg-secondary">Axios</span>
+            </div>
+          </div>
+
+          <div class="modal-footer border-secondary">
+            <a
+              href="https://github.com/LucasCobraFatec/DevWeb-2-megasena"
+              target="_blank"
+              class="btn btn-outline-light"
+              >Repositório GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalEmBreve"
+      tabindex="-1"
+      aria-labelledby="modalEmBreveLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title destaque" id="modalEmBreveLabel">
+              Aguardem Próximos Projetos
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./src/images/nxpj.JPG"
+              class="img-fluid rounded mb-3 w-100"
+              alt="Próximos Projetos"
+            />
+            <h4 class="mt-3">O que vem por aí?</h4>
+            <p>Atualmente estou desenvolvendo novas soluções.</p>
+            <h4 class="mt-3">Tecnologias em Estudo</h4>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-secondary">Python</span
+              ><span class="badge bg-secondary">React</span
+              ><span class="badge bg-secondary">Node.js</span
+              ><span class="badge bg-secondary">TypeScript</span>
+            </div>
+          </div>
+          <div class="modal-footer border-secondary">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar</button
+            ><a
+              href="https://github.com/LucasCobraFatec"
+              target="_blank"
+              class="btn btn-primary"
+              >Ver Perfil no GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/script/main.js"></script>
+  </body>
 </html>
