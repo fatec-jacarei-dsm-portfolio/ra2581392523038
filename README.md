@@ -3,7 +3,7 @@
 
 ### Video de apresentação 
 
-** [Portfolio]((https://youtu.be/y5cjFY7a_o8))  
+** [Portfolio](https://youtu.be/y5cjFY7a_o8)  
 
 ---
 
