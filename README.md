@@ -1,6 +1,12 @@
 # Olá, eu sou o Lucas Cobra! 👋
 # ra2581392523038
 
+### Video de apresentação 
+
+**[Portfolio] - (https://youtu.be/y5cjFY7a_o8)
+
+---
+
 ### Desenvolvedor Multiplataforma | UI/UX Designer | Especialista em TI
 
 Trabalho há mais de 14 anos transformando problemas complexos de infraestrutura em soluções digitais fluidas. Atualmente, curso Desenvolvimento de Sistemas na FATEC, onde uno minha base sólida em TI e Design Gráfico para criar interfaces modernas e códigos eficientes.
