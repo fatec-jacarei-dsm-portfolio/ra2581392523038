@@ -55,6 +55,12 @@ Projeto acadêmico focado em agronegócio com foco em UX/UX moderno.
 - **Tech Stack:** HTML5 • CSS3 • JavaScript • Figma • UML
 - **Status:** [ Finalizado]
 
+### 🤖 [ FatecBot — Sistema de Autoatendimento Acadêmico](https://github.com/seliganessesdevs012/FATECBOT-ABP.git)
+Projeto acadêmico de DSM focado em automação de processos da secretaria com foco em UX conversacional.
+- **Descrição:**  Atuei como Scrum Master, sendo responsável pela modelagem UML e gestão ágil da equipe, além de contribuir na implementação da interface do Chatbot em React.
+- **Tech Stack:** React • TypeScript • Node.js • Prisma • Docker • Figma • UML
+- **Status:** [🚧 Em Desenvolvimento / Sprint 1]
+
 ---
 
 
