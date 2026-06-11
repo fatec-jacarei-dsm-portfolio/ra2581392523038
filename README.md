@@ -2,13 +2,13 @@
 
 **Aluno:** [Lucas Fernando Cobra]  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** [2/2025]
+**Turma:** [2sem/2025]
 
 ---
 
 **Portfólio Online**
 
-🔗 [Acesse o Portfólio](LINK_PARA_PORTFOLIO)
+🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392523038/)
 
 ---
 
